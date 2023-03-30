@@ -7,20 +7,24 @@
 body{
   width: 100vw;
   height: 100vh;
-  display: grid;
-  justify-content: center;
 }
 
 h1{
   text-align: center;
 }
 
+.notes-form{
+  width: 80%;
+  margin: 0 auto;
+}
+
 form{
-  margin: 20px 0;
+  width: 80%;
+  margin: 0 auto;
 }
 
 input{
-  width: 500px;
+  width: 60%;
   height: 50px;
   padding: 8px 16px;
   font-size: 1.2em;
@@ -40,10 +44,10 @@ button{
   background: lightgreen;
 }
 
-.del-btn{
-  background: salmon;
+ul{
+  width: 80%;
+  margin: 20px auto;
 }
-
 
 li{
   list-style: none;
@@ -60,3 +64,40 @@ li span{
   padding: 8px 16px;
 }
 
+.del-btn{
+  background: salmon;
+}
+
+@media screen and (max-width: 500px) {
+  .notes-form{
+    width: 100%;
+  }
+
+  form{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  input{
+    width: 70%;
+  }
+  
+  ul{
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  li{
+    display: block;
+    background: seashell;
+    padding: 8px 16px;
+  }
+
+  li span{
+    display: block;
+    width: 100%;
+    border: 2px solid gray;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+  }
+}

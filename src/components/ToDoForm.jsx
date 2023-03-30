@@ -77,7 +77,7 @@ const ToDoForm = () => {
   };
 
   return (
-    <div>
+    <div className="notes-form">
       {isEditing ? (
         <form onSubmit={handleEditForm}>
           <h2>Edit Todo</h2>
